@@ -119,6 +119,28 @@ The benefit here is that it's explicitly set. However, note that the `DB_PASSWOR
 9. Screenshot of AWS CloudWatch logs for the application
 10. `README.md` file in your solution that serves as documentation for your user to detail how your deployment process works and how the user can deploy changes. The details should not simply rehash what you have done on a step by step basis. Instead, it should help an experienced software developer understand the technologies and tools in the build and deploy process as well as provide them insight into how they would release new builds.
 
+### CloudWatch
+
+View metrics and logs in CloudWatch:
+
+![CloudWatch](./screenshots/CloudWatchCluster.png)
+
+### Get Web API URL
+
+To access the Web API, follow these steps:
+
+1. Get the load balancer external IP:
+   
+   ![Kubectl Get SVC](./screenshots/KubectlGetService.png)
+
+2. Access the Web API using the provided external IP.
+
+   ![Web API](./screenshots/CURLReport.png) 
+
+3. Get pods.
+
+   ![Get pods](./screenshots/KubectlGetPods.png) 
+
 
 ### Stand Out Suggestions
 Please provide up to 3 sentences for each suggestion. Additional content in your submission from the standout suggestions do _not_ impact the length of your total submission.
